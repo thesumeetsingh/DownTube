@@ -1,0 +1,84 @@
+/* Theme transition animations */
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Light theme variables */
+:root {
+  --background: 255 255 255;
+  --foreground: 17 24 39;
+  --muted: 243 244 246;
+  --muted-foreground: 107 114 128;
+  --border: 229 231 235;
+  --input: 255 255 255;
+  --primary: 59 130 246;
+  --primary-foreground: 255 255 255;
+  --secondary: 243 244 246;
+  --secondary-foreground: 17 24 39;
+  --accent: 243 244 246;
+  --accent-foreground: 17 24 39;
+  --destructive: 239 68 68;
+  --destructive-foreground: 255 255 255;
+  --ring: 59 130 246;
+}
+
+/* Dark theme variables */
+.dark {
+  --background: 17 24 39;
+  --foreground: 243 244 246;
+  --muted: 55 65 81;
+  --muted-foreground: 156 163 175;
+  --border: 55 65 81;
+  --input: 55 65 81;
+  --primary: 59 130 246;
+  --primary-foreground: 255 255 255;
+  --secondary: 55 65 81;
+  --secondary-foreground: 243 244 246;
+  --accent: 55 65 81;
+  --accent-foreground: 243 244 246;
+  --destructive: 239 68 68;
+  --destructive-foreground: 255 255 255;
+  --ring: 59 130 246;
+}
+
+/* Theme-specific component styles */
+.theme-bg-primary {
+  background-color: rgb(var(--background));
+}
+
+.theme-text-primary {
+  color: rgb(var(--foreground));
+}
+
+.theme-bg-secondary {
+  background-color: rgb(var(--muted));
+}
+
+.theme-text-secondary {
+  color: rgb(var(--muted-foreground));
+}
+
+.theme-border {
+  border-color: rgb(var(--border));
+}
+
+/* Gradient backgrounds for hero sections */
+.gradient-bg-light {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-bg-dark {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+}
+
+/* Glass morphism effect */
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-effect {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

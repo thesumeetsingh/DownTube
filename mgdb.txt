@@ -1,0 +1,5 @@
+1Z7ua3A9pVsIgJUh
+
+downtube_user
+
+mongodb+srv://downtube_user:1Z7ua3A9pVsIgJUh@downtubecluster.gdjz69z.mongodb.net/?retryWrites=true&w=majority&appName=downtubeCluster
